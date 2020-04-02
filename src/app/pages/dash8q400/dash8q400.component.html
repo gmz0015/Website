@@ -1,0 +1,72 @@
+<form nz-form>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">Departure</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Departure is required">
+      <input nz-input [(ngModel)]="departure" name="departure" required placeholder="Departure Airport"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">Arrival</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Input is required">
+      <input nz-input [(ngModel)]="arrival" name="arrival" required placeholder="Arrival Airport"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">FLAPS</nz-form-label>
+    <nz-radio-group [(ngModel)]="flapValue" [nzButtonStyle]="'solid'" name="flapValue">
+      <label nz-radio-button nzValue="5">5</label>
+      <label nz-radio-button nzValue="10">10</label>
+      <label nz-radio-button nzValue="15">15</label>
+    </nz-radio-group>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">ZFW</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Input is required">
+      <input nz-input [(ngModel)]="ZFW" name="ZFW" required placeholder="Zero Fuel Weight"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">ALTN</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Input is required">
+      <input nz-input [(ngModel)]="ALTN" name="ALTN" required placeholder="Alternate Fuel"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">RESV</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Input is required">
+      <input nz-input [(ngModel)]="RESV" name="RESV" required placeholder="Hold Fuel"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">CONT</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Input is required">
+      <input nz-input [(ngModel)]="CONT" name="CONT" required placeholder="Extra Fuel"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">DOM</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Input is required">
+      <input nz-input [(ngModel)]="DOM" name="DOM" required placeholder="Arrival Airport"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">DOI</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Input is required">
+      <input nz-input [(ngModel)]="DOI" name="DOI" required placeholder="Arrival Airport"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">T/O FUEL</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Input is required">
+      <input nz-input [(ngModel)]="TAKEOFF" name="TAKEOFF" required placeholder="Takeoff Fuel"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5">TRIP FUEL</nz-form-label>
+    <nz-form-control nzHasFeedback [nzSpan]="6" nzErrorTip="Input is required">
+      <input nz-input [(ngModel)]="TRIP" name="TRIP" required placeholder="Trip Fuel"/>
+    </nz-form-control>
+  </nz-form-item>
+
+</form>
