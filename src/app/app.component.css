@@ -78,3 +78,7 @@ nz-content {
   background: #fff;
   height: 100%;
 }
+
+nz-footer {
+  text-align: center;
+}

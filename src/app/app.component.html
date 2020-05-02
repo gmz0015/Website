@@ -8,7 +8,7 @@
     <div class="sidebar-logo">
       <a href="https://ng.ant.design/" target="_blank">
         <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
-        <h1>Ant Design Of Angular</h1>
+        <h1>Noah Gao's Website</h1>
       </a>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
@@ -21,7 +21,7 @@
             <a routerLink="/Dash8-Q400">Dash8-Q400</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Monitor</a>
+            <a>RESTfule Framwork</a>
           </li>
           <li nz-menu-item nzMatchRouter>
             <a>Workplace</a>
@@ -40,12 +40,19 @@
   <nz-layout>
     <nz-header>
       <div class="app-header">
-        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-            <i class="trigger"
-               nz-icon
-               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-            ></i>
-        </span>
+        <div nz-row>
+          <div nz-col nzSpan="8">
+            <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+                <i class="trigger"
+                   nz-icon
+                   [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+                ></i>
+            </span>
+          </div>
+          <div nz-col nzSpan="3" nzOffset="13" style="text-align: center;">
+            <nz-avatar nzSrc="../../assets/noahgao-avatar.png"></nz-avatar> Noah Gao
+          </div>
+        </div>
       </div>
     </nz-header>
     <nz-content>
@@ -54,6 +61,6 @@
       </div>
     </nz-content>
 
-    <nz-footer><a href="http://www.beian.miit.gov.cn/">蒙ICP备20000705号</a></nz-footer>
+    <nz-footer><a href="http://www.beian.miit.gov.cn/" target="_blank">蒙ICP备20000705号</a></nz-footer>
   </nz-layout>
 </nz-layout>

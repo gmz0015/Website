@@ -1,1 +1,28 @@
-Hello World
+<div>
+  <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionWechat, actionQQ, actionGithub]">
+    <nz-card-meta nzTitle="Noah Gao" nzDescription="Dedicate to code" [nzAvatar]="avatarTemplate"></nz-card-meta>
+  </nz-card>
+  <ng-template #avatarTemplate>
+    <nz-avatar nzSrc="../../assets/noahgao-avatar.png"></nz-avatar>
+  </ng-template>
+  <ng-template #coverTemplate>
+    <!-- <img alt="example" src="http://oss.noahgao.com/cat_background.jpg?x-oss-process=image/auto-orient,1/interlace,1/resize,m_fill,w_262,h_159" /> -->
+    <img alt="background" src="../../assets/noahgao-background.jpg" />
+  </ng-template>
+
+  <ng-template #actionWechat>
+    <i nz-icon nzType="wechat" nz-popover [nzPopoverTitle]="wechatTemplate" [nzPopoverContent]="wechatContentTemplate"></i>
+  </ng-template>
+  <ng-template #wechatTemplate><img alt="wechat" src="../../assets/wechat.jpg" style="height:200px"/></ng-template>
+  <ng-template #wechatContentTemplate>Wechat</ng-template>
+
+  <ng-template #actionQQ>
+    <i nz-icon nzType="qq" nz-popover [nzPopoverTitle]="qqTemplate" [nzPopoverContent]="qqContentTemplate"></i>
+  </ng-template>
+  <ng-template #qqTemplate><img alt="wechat" src="../../assets/qq.jpg" style="height:200px"/></ng-template>
+  <ng-template #qqContentTemplate>QQ</ng-template>
+
+  <ng-template #actionGithub>
+    <a nz-icon nzType="github" href="https://github.com/gmz0015" target="_blank"></a>
+  </ng-template>
+</div>

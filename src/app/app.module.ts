@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 
+import { NzCardModule } from 'ng-zorro-antd/card';
+
 registerLocaleData(en);
 
 const antDesignIcons = AllIcons as {
@@ -32,6 +34,7 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesign
     NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
+    NzCardModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },
