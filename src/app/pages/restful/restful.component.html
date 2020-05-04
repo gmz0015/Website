@@ -1,0 +1,12 @@
+<div>
+  <p>restful works!</p>
+  <div>
+    <nz-skeleton [nzLoading]="loading" [nzActive]="true">
+      <nz-descriptions nzTitle="User Info">
+        <nz-descriptions-item nzTitle="Users">{{ messages.users }}</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Groups">{{ messages.groups }}</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="User">{{ users }}</nz-descriptions-item>
+      </nz-descriptions>
+    </nz-skeleton>
+  </div>
+</div>
