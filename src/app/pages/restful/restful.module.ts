@@ -5,6 +5,7 @@ import { RESTfulComponent } from '../restful/restful.component';
 import { RESTfulRoutingModule } from './restful-routing.module';
 
 import { NgZorroAntdModule, NZ_I18N, NZ_ICONS, en_US } from 'ng-zorro-antd';
+import { FormsModule } from '@angular/forms';
 import { IconDefinition } from '@ant-design/icons-angular';
 import * as AllIcons from '@ant-design/icons-angular/icons'
 
@@ -19,6 +20,7 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesign
   imports: [
     RESTfulRoutingModule,
     NgZorroAntdModule,
+    FormsModule,
     CommonModule,
   ],
 
